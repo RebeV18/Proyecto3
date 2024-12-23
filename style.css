@@ -1,0 +1,207 @@
+html,
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  align-items: start;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: none;
+}
+
+h1 {
+  color: azure;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  color: azure;
+}
+
+
+.nav-icon {
+  color: azure;
+  display: block;
+}
+
+.nav-toggle:checked + .nav-icon + .menu {
+  display: flex;
+}
+
+a {
+  color: azure;
+  justify-content: space-between;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: rgb(0, 44, 53);
+  background-color:rgb(176, 250, 250);
+  border-radius: 5px;
+}
+
+.portada {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: none;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.disc-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.disc-container .cd {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border: 2px solid azure;
+  border-radius: 10px;
+}
+
+.disc-container .cd h3 {
+  color: azure;
+}
+
+.disc-container .cd img {
+  padding: 10px;
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: azure;
+}
+
+.socialMedia{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.rs {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 100px;
+}
+
+.socialMedia article{
+  display: inline;
+  padding: 20px;
+}
+
+.head-disco {
+  padding: 20px;
+}
+.head-disco i{
+  justify-content: end;
+}
+
+.cd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid azure;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin: 20px;
+}
+
+.cd img{
+  padding-top: 20px;
+}
+
+h3{
+  color: azure;
+  font-size: -1rem;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+button{
+  background-color: black;
+}
+
+.rs {
+  list-style: none;
+  padding: 20px;
+}
+
+.rs p{
+  display: inline;
+  color: azure;
+  padding: 20px;
+}
+
+.rs a{
+  color: azure;
+  padding: 20px;
+}
+
+
+footer {
+  color: azure;
+  display: flex;
+  align-content: flex-end;
+  align-items: baseline;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: -4rem;
+  padding-left: 50px;
+}
+
+
+@media (min-width: 768px) {
+  .portada {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .portada img {
+    width: 600px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    padding-right: 20px;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  footer{
+    padding: 0;
+  }
+}

@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Página-1" id="0pkLi0vkNW15PhA35iTb">
+    <mxGraphModel dx="3585" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tXXoms3pWybsynBhFE-D-3" value="Contacto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tXXoms3pWybsynBhFE-D-4" value="Discografia" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tXXoms3pWybsynBhFE-D-5" value="Agenda" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tXXoms3pWybsynBhFE-D-6" value="Postada nuevo CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="300" width="340" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="tXXoms3pWybsynBhFE-D-7" value="Footer: Luis Gerardo Aquino" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1070" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tXXoms3pWybsynBhFE-D-8" value="Links para comprar nuevo CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="810" width="670" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
