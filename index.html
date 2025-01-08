@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Luis Gerardo Aquino</title>
+
+    <style>
+      #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #000000;
+        color: azure;
+        text-decoration: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      #back-to-top:hover {
+        background-color: #000408;
+      }
+    </style>
   </head>
 
   <body>
@@ -21,71 +39,216 @@
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-icon">☰</label>
       <ul class="menu">
-        <li><a href="Contact.html">Contacto</a></li>
-        <li><a href="Discography.html">Discografía</a></li>
-        <li><a href="Agenda.html">Agenda</a></li>
+        <li><a href="#socialMedia">Contacto</a></li>
+        <li><a href="#discografia">Discografía</a></li>
+        <li><a href="#plataformas">Plataformas</a></li>
       </ul>
     </nav>
     <main>
       <div class="portada">
-        <img src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877919/Portada_gxum4w.jpg" width="100%" />
+        <img src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1736218921/IMG_2166_dej5fy.jpg" class="imagenx"/>
       </div>
-      <div class="d-flex justify-content-center gap-3 bg-black py-5">
+      <div class="plataformas" id="plataformas" >
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="https://music.apple.com/us/artist/luis-gerardo-aquino/1488821749"
               class="fa-brands fa-apple"
-              style="font-size: 33px; color: rgb(132, 240, 229)"
+              style="font-size: 150%; color: rgb(132, 240, 229)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(132, 240, 229)'"
+              target="_blank"
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://open.spotify.com/intl-es/artist/6fOP4z7ud77WF150XsvW55"
               class="fa-brands fa-spotify"
-              style="font-size: 33px; color: rgb(126, 241, 180)"
+              style="font-size: 150%; color: rgb(126, 241, 180)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(126, 241, 180)'"
+              target="_blank"
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://www.youtube.com/channel/UC9fmY9E40ON7DqZsRrYiGFg"
               class="fa-brands fa-youtube"
-              style="font-size: 33px; color: rgb(203, 245, 152)"
+              style="font-size: 150%; color: rgb(203, 245, 152)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(203, 245, 152)'"
+              target="_blank"
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://music.amazon.com/artists/B00RNMJQX0/luis-gerardo-aquino"
               class="fa-brands fa-amazon"
-              style="font-size: 33px; color: rgb(245, 225, 127)"
+              style="font-size: 150%; color: rgb(245, 225, 127)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(245, 225, 127)'"
+              target="_blank"
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://www.deezer.com/mx/artist/7030793"
               class="fa-brands fa-deezer"
-              style="font-size: 33px; color: rgb(244, 205, 140)"
+              style="font-size: 150%; color: rgb(253, 198, 104)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(244, 205, 140)'"
+              target="_blank"
             ></a>
           </li>
           <li class="list-inline-item">
             <a href="https://soundcloud.com/luis-gakino/albums"
               class="fa-brands fa-soundcloud"
-              style="font-size: 33px; color: rgb(252, 175, 228)"
+              style="font-size: 150%; color: rgb(250, 146, 146)"
               onmouseover="this.style.color='azure'"
               onmouseout="this.style.color='rgb(252, 175, 228)'"
+              target="_blank"
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.boomplay.com/artists/12394327?from=search"
+              class="fa-solid fa-b"
+              style="font-size: 150%; color: rgb(252, 175, 228)"
+              onmouseover="this.style.color='azure'"
+              onmouseout="this.style.color='rgb(252, 175, 228)'"
+              target="_blank"
             ></a>
           </li>
         </ul>
       </div>
+
+      <h2 id="discografia">Discografía</h2>
+      <div class="discografia">
+        <div class="cd">
+        <p>Yo miro tu Gloria</p>
+        <a href="https://www.youtube.com/watch?v=Kl-ayjSD4QY" target="_blank">
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1736226040/YMTG_oekfd1.webp"
+            width="65%"
+          />
+         </a>
+        </div>
+  
+        <div class="cd">
+          <p>Bajo la order de Jehová</p>
+          <a href="https://www.youtube.com/watch?v=Rw92MNzfHQk" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877681/BLODJ_cxknfb.webp"
+            width="40%"
+          />
+          </a>
+        </div>
+  
+        <div class="cd">
+          <p>Rey de las Naciones</p>
+          <a href="https://www.youtube.com/watch?v=r4fO7B0v9QU&list=PLV-ECgv7Ks1jRPxKVkphc9EueMvT5xqwi" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877682/RDN_m6hmty.webp"
+            width="40%"
+          />
+          </a>
+        </div>
+  
+        <div class="cd">
+          <p>Tiempo de Resplandecer</p>
+          <a href="https://www.youtube.com/watch?v=e80-Rf_uKEY&list=PLV-ECgv7Ks1iizvZBkO_Au_ArOsTDC_PK" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877681/TDR_nlaaqe.webp"
+            width="40%" 
+          />
+         </a>
+        </div>
+  
+        <div class="cd">
+          <p>Sesiones acústicas</p>
+          <a href="https://www.youtube.com/watch?v=vzQcFF3BV9g&list=PLV-ECgv7Ks1huciQ07ppklwbhTIYuCL0-" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877681/acustic_toen5v.jpg"
+            width="40%"
+          />
+          </a>
+        </div>
+      </div>
+
+      <h2>Singles</h2>
+      <div class="singles">
+        <div class="cd">
+          <p>La Luz de Tu Amor</p>
+          <a href="https://youtu.be/Gy5DQBzYppU?si=DhR5obNtm7IzGrqO" target="_blank">
+            <img
+              src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734877682/Single1_m9qugc.webp"
+              width="40%"
+            />
+          </a>
+        </div>
+  
+        <div class="cd">
+          <p>Hay Poder</p>
+          <a href="https://youtu.be/zwfdNWOG5Yo?si=ozFQyuqvHgE4tm09" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734889314/descarga_qimci2.jpg"
+            width="40%"
+          />
+          </a>
+        </div>
+  
+        <div class="cd">
+          <p>Espíritu de Dios</p>
+          <a href="https://www.youtube.com/watch?v=LFYsSYM_PHc&list=PLV-ECgv7Ks1g51padfMoAb7Xr1_hl1R5u&index=5" target="_blank"></a>
+          <img
+            src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1734889094/316x316bb_iws5m7.webp"
+            width="40%"
+          />
+         </a>
+        </div>
+      </div>
+
+      <h2 id="socialMedia">Síguenos</h2>
+      <div class="socialMedia">
+          <ul class="rrss">
+            <li class="rs">
+              <a
+                href="https://luisgerardoaquino.bandzoogle.com/inicio"
+                class="fa-solid fa-circle-info"
+                style="font-size: 250%; color: rgb(228, 245, 133)"
+                onmouseover="this.style.color='azure'"
+                onmouseout="this.style.color='rgb(252, 208, 63)'"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="rs">
+              <a
+                href="https://www.facebook.com/LuisGerardoAquinoSV/?locale=es_LA"
+                class="fa-brands fa-facebook"
+                style="font-size: 250%; color: rgb(4, 104, 185)"
+                onmouseover="this.style.color='azure'"
+                onmouseout="this.style.color='rgb(4, 104, 185)'"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="rs">
+              <a
+                href="https://www.instagram.com/luisgerardoaquino/"
+                class="fa-brands fa-instagram"
+                style="font-size: 250%; color: rgb(134, 0, 123)"
+                onmouseover="this.style.color='azure'"
+                onmouseout="this.style.color='rgb(134, 0, 123)'"
+                target="_blank"
+              ></a>
+            </li>
+      </div>
     </main>
     <footer>
-      <h2>LUIS GERARDO AQUINO</h2>
+      <p>&#169; LUIS GERARDO AQUINO  ||  contacto: +56 9 1111 1111  ||  luisgerardoaquino@gmail.com</p>
     </footer>
+    
+    <!-- Botón de "Ir arriba" -->
+    <a href="#top" id="back-to-top"
+    style="font-size: 24px; color: azure;" 
+    onmouseover="this.style.color='rgb(97, 235, 235)'" 
+    onmouseout="this.style.color='azure'"
+    >↑</a>
+
     <script src="main.js"></script>
   </body>
 </html>
