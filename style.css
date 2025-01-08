@@ -1,7 +1,6 @@
 html,
 body {
   background-color: black;
-  display: flex;
   flex-direction: column;
 }
 
@@ -29,7 +28,6 @@ h1 {
   list-style: none;
   color: azure;
 }
-
 
 .nav-icon {
   color: azure;
@@ -63,59 +61,43 @@ a {
   padding-bottom: 30px;
 }
 
-.disc-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 50px;
+.imagenx {
+  width: 100%;
+  height: auto;
+
 }
 
-.disc-container .cd {
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  border: 2px solid azure;
-  border-radius: 10px;
-}
-
-.disc-container .cd h3 {
-  color: azure;
-}
-
-.disc-container .cd img {
-  padding: 10px;
-}
-
-
-.contacts {
+.plataformas{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: azure;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-.socialMedia{
+.plataformas ul li a{
+  padding: 7px;
+}
+
+.discografia{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 50px;
+  padding-top: 0;
 }
 
-.rs {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding: 100px;
+.cd p{
+  color: azure;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
 }
 
-.socialMedia article{
-  display: inline;
-  padding: 20px;
-}
-
-.head-disco {
-  padding: 20px;
-}
-.head-disco i{
-  justify-content: end;
+.cd img{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .cd{
@@ -128,46 +110,56 @@ a {
   margin: 20px;
 }
 
-.cd img{
-  padding-top: 20px;
+.singles{
+  display: grid;
+  grid-template-columns: repeat(auto-fil, 1fr);
+  grid-template-rows: repeat(auto-fil, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 5;
+  gap: 50px;
+  padding-top: 0;
 }
 
-h3{
+h2{
   color: azure;
   font-size: -1rem;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-button{
-  background-color: black;
-}
-
-.rs {
-  list-style: none;
-  padding: 20px;
-}
-
-.rs p{
-  display: inline;
-  color: azure;
-  padding: 20px;
-}
-
-.rs a{
-  color: azure;
-  padding: 20px;
-}
-
-
-footer {
-  color: azure;
+.rrss{
   display: flex;
-  align-content: flex-end;
-  align-items: baseline;
+  flex-direction: row;
   justify-content: center;
-  padding-top: 20px;
-  font-size: -4rem;
-  padding-left: 50px;
+  gap: 50px;
+}
+
+.rs{
+  list-style: none;
+}
+
+.socialMedia{
+  padding-bottom: 85px;
+}
+
+
+footer{
+  background-color: black;
+  justify-content: center;
+  color: azure;
+  padding: 20px;
+  font-size: -2rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.back-to-top{
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+  align-content: flex-end;
 }
 
 
@@ -177,8 +169,9 @@ footer {
     padding-bottom: 10px;
   }
 
-  .portada img {
-    width: 600px;
+  .imagenx {
+    width: 100%;
+    height: auto;
   }
 
   .menu {
@@ -201,7 +194,32 @@ footer {
     cursor: pointer;
   }
 
-  footer{
-    padding: 0;
+  .plataformas ul li a{
+    padding: 20px;
+  }
+
+  .discografia{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .singles{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .cd img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
   }
 }
