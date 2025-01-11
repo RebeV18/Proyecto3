@@ -14,7 +14,7 @@ d. Footer Sección que incluye todas las áreas del sitio, incluyendo redes soci
 
 
 
-## prototipado
+## Prototipado
 ![Prototipado](https://res.cloudinary.com/ddxlvh0go/image/upload/v1736620318/Landing_Page_LG.drawio_yi6piw.png)
 
 
