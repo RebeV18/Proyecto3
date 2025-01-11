@@ -4,15 +4,6 @@ body {
   flex-direction: column;
 }
 
-nav {
-  align-items: start;
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-start;
-  align-items: flex-start;
-  padding: none;
-}
-
 h1 {
   color: azure;
   display: flex;
@@ -20,6 +11,7 @@ h1 {
   padding-bottom: 50px;
   padding-top: 20px;
 }
+
 
 .menu {
   display: none;
@@ -70,8 +62,10 @@ a {
 .plataformas{
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 50px;
 }
+
 
 .plataformas ul li a{
   padding: 7px;
@@ -146,13 +140,16 @@ h2{
 
 
 footer{
+  width: 100%;
   background-color: black;
   justify-content: center;
   color: azure;
-  padding: 20px;
-  font-size: -2rem;
+  padding: px;
+  font-size: 0.7rem;
   position: fixed;
+  float:none;
   bottom: 0;
+  text-align: center;
 }
 
 .back-to-top{
@@ -196,8 +193,79 @@ footer{
 
   .plataformas ul li a{
     padding: 20px;
+    font-size: "200%";
+    size: "150%";
   }
 
+  .discografia{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .singles{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .cd img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  footer{
+    font-size: 1.0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discografia{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .singles{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  .cd img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .plataformas ul li a{
+    padding: 20px;
+    font-size: "250%";
+    size: "180%";
+  }
+
+  footer{
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 1440px) {
   .discografia{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -221,5 +289,16 @@ footer{
     height: auto;
     cursor: pointer;
     padding: 10px;
+  }
+
+  .plataformas ul li a{
+    padding: 20px;
+    font-size: "300%";
+    size: "300%";
+  }
+
+
+  footer{
+    font-size: 1.4rem;
   }
 }
