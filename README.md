@@ -60,8 +60,39 @@ Se utilizó la opción de hamburguesa para mejorar la experiencia en dispositivo
 
 A través de una imagen del último concierto se presenta al artista, como una descripción gráfica.
 
-En esta sección se agregaron los íconos de las plataformas de música donde está disponible la música del artista.
-Para esto se usó una lista en línea que contiene los elementos de las plataformas.
+Se incluyó un formulario que permite a los usuarios agregar su correo electrónico a la base de datos del artista para futuros contactos o para recibir información. Los correos se almacenan en un arreglo. Para esto vinculamos el archivo main.js con el código para leer el evento submit cuando el usuario da click en Enviar o presiona "Enter".
+```
+      document.addEventListener('DOMContentLoaded', () => {
+        const contact = document.getElementById('contact');
+        const contactos = [];
+        const nuevoContacto = document.getElementById('newContact');
+      
+        const crearContacto = (evento) => {
+          evento.preventDefault();
+          const email = nuevoContacto.value.trim();
+          if (email === '') {
+            alert("Por favor, ingrese un email válido");
+            return;
+          }
+          const existe = contactos.includes(email);
+          if (existe) {
+            alert("Su email ya está registrado");
+          } else {
+            contactos.push(email);
+            const nuevo = document.createElement('div');
+            nuevo.textContent = email; // Añadir el valor del nuevo contacto al div
+            alert("Su email fue agregado a nuestra base de datos");
+            nuevoContacto.value = ''; // Borrar el contenido del input
+            console.log(contactos);
+          }
+        }
+      
+        contact.addEventListener('submit', crearContacto);
+      });
+```
+
+
+En esta sección se agregaron los íconos de las plataformas de música donde está disponible la música del artista. Para esto se usó una lista en línea que contiene los elementos de las plataformas.
 Cada elemento tiene un ícono con un link que deriva a la página correspondiente en una nueva pestaña para que los usuarios puedan adquirir sus productos. Se le agregó la opción de cambiar de color al pasar el mouse sobre el ícono.
 
 ```
