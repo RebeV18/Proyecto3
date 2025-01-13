@@ -44,6 +44,7 @@ a {
 }
 
 .portada {
+  position: relative;
   display: flex;
   align-items: center;
   align-content: center;
@@ -53,10 +54,51 @@ a {
   padding-bottom: 30px;
 }
 
+#contact {
+  position: absolute;
+  align-items: center;
+  left: 20px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: #04334b;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn hover {
+  background-color: #05709d;
+  color: azure;
+}
+
+.input {
+  background-color: rgba(40, 41, 41, 0.72);
+  color: white;
+  width: 70%;
+  padding: 6px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 .imagenx {
   width: 100%;
   height: auto;
 
+}
+
+.contact button {
+  color: black;
 }
 
 .plataformas{
