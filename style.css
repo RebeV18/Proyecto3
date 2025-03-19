@@ -8,8 +8,10 @@ h1 {
   color: azure;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
-  padding-top: 20px;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -33,12 +35,13 @@ h1 {
 a {
   color: azure;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0.9rem;
   text-decoration: none;
 }
 
 .menu li a:hover {
   color: rgb(0, 44, 53);
+
   background-color:rgb(176, 250, 250);
   border-radius: 5px;
 }
@@ -50,15 +53,21 @@ a {
   align-content: center;
   justify-content: center;
   margin: none;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-top: 6rem;
+  padding-bottom: 1.9rem;
+}
+
+.portada p {
+  justify-content:flex-start;
+  display: inline;
+  color: azure;
 }
 
 #contact {
   position: absolute;
   align-items: center;
-  left: 20px;
-  padding: 10px;
+  left: 1.3rem;
+  padding: 0.6rem;
   background-color: transparent;
 }
 
@@ -66,12 +75,12 @@ a {
   background-color: #04334b;
   border: none;
   color: white;
-  padding: 8px;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1rem;
+  margin: 0.3rem 0.1rem;
   cursor: pointer;
 }
 
@@ -84,17 +93,29 @@ a {
   background-color: rgba(40, 41, 41, 0.72);
   color: white;
   width: 70%;
-  padding: 6px 8px;
-  margin: 8px 0;
+  padding: 0.4rem 0.5rem;
+  margin: 0.5rem 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 0.4rem;
 }
 
 .imagenx {
   width: 100%;
   height: auto;
+  display: block;
+  /* box-shadow: inset 0px 0px 1.3rem rgba(0, 0, 0, 0.5); */
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .contact button {
@@ -104,72 +125,61 @@ a {
 .plataformas{
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
-  padding-top: 50px;
+  padding-bottom: 0.9rem;
+  padding-top: 3rem;
 }
 
 
 .plataformas ul li a{
-  padding: 7px;
+  padding: 0.3rem;
 }
 
 .discografia{
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
-  gap: 50px;
+  gap: 3rem;
   padding-top: 0;
+}
+
+.cd h4{
+  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 .cd p{
   color: azure;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7rem;
   text-align: center;
   margin: 0;
 }
 
 .cd img{
-  width: 150px;
+  width: 13rem;
   height: auto;
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 0.6rem;
 }
 
 .cd{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid azure;
-  border-radius: 10px;
-  padding-top: 20px;
-  margin: 20px;
-}
-
-.singles{
-  display: grid;
-  grid-template-columns: repeat(auto-fil, 1fr);
-  grid-template-rows: repeat(auto-fil, 1fr);
-  grid-column-start: 2;
-  grid-column-end: 5;
-  gap: 50px;
-  padding-top: 0;
-}
-
-h2{
-  color: azure;
-  font-size: -1rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  text-align: center;
+  border: 0.1rem solid azure;
+  border-radius: 0.6rem;
+  padding-top: 1.3rem;
+  margin: 1.3rem;
 }
 
 .rrss{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 3rem;
 }
 
 .rs{
@@ -177,7 +187,7 @@ h2{
 }
 
 .socialMedia{
-  padding-bottom: 85px;
+  padding-bottom: 5.3rem;
 }
 
 
@@ -204,8 +214,8 @@ footer{
 
 @media (min-width: 768px) {
   .portada {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 
   .imagenx {
@@ -219,49 +229,39 @@ footer{
     justify-content: end;
     list-style: none;
     margin: 0;
-    padding: 10px;
-    padding-right: 20px;
+    padding: 0.6rem;
+    padding-right: 1.3rem;
   }
-  
+
   .nav-toggle {
     display: none;
   }
-  
+
   .nav-icon {
     display: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
   .plataformas ul li a{
-    padding: 20px;
-    font-size: "200%";
-    size: "150%";
+    padding: 1.3rem;
+    font-size: 3rem;
+    size: 3rem;
   }
 
   .discografia{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    padding-top: 0;
-  }
-
-  .singles{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 5;
-    gap: 50px;
+    gap: 3rem;
     padding-top: 0;
   }
 
   .cd img{
-    width: 150px;
+    width: 9.4rem;
     height: auto;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.6rem;
   }
 
   footer{
@@ -274,31 +274,21 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 50px;
-    padding-top: 0;
-  }
-
-  .singles{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 5;
-    gap: 50px;
+    gap: 3rem;
     padding-top: 0;
   }
 
   .cd img{
-    width: 150px;
+    width: 9.4rem;
     height: auto;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.6rem;
   }
 
   .plataformas ul li a{
-    padding: 20px;
-    font-size: "250%";
-    size: "180%";
+    padding: 1.3rem;
+    font-size: 7rem;
+    size: 7rem;
   }
 
   footer{
@@ -312,35 +302,36 @@ footer{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 50px;
-    padding-top: 0;
-  }
-
-  .singles{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 5;
-    gap: 50px;
+    gap: 3rem;
     padding-top: 0;
   }
 
   .cd img{
-    width: 150px;
+    width: 9.4rem;
     height: auto;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.6rem;
   }
 
   .plataformas ul li a{
-    padding: 20px;
-    font-size: "300%";
-    size: "300%";
+    padding: 1.3rem;
+    font-size: 12rem;
+    size: 12rem;
   }
 
 
   footer{
     font-size: 1.4rem;
+  }
+}
+
+
+
+@media (min-width: 2560px) {
+
+  .plataformas ul li a{
+    padding: 1.3rem;
+    font-size: 30rem;
+    size: 30rem;
   }
 }
