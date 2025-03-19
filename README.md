@@ -28,7 +28,7 @@ Se utilizó la opción de hamburguesa para mejorar la experiencia en dispositivo
 ```
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Aquino</a>
+        <a class="navbar-brand" href="#">LUIS GERARDO AQUINO</a>
         <button 
           class="navbar-toggler" 
           type="button" 
@@ -59,6 +59,21 @@ Se utilizó la opción de hamburguesa para mejorar la experiencia en dispositivo
 ## Main
 
 A través de una imagen del último concierto se presenta al artista, como una descripción gráfica.
+
+```
+      <div class="portada z-0">
+        <img src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1736218921/IMG_2166_dej5fy.jpg" class="imagenx"/>
+        <div class="overlay"></div>
+        <form id="contact">
+          <div>
+          <input class="input" type="email" id="newContact" placeholder="Escribe tu email">
+          <button class="btn" id="submit">Enviar</button>
+        </div>
+          <p>Ingrese su correo electrónico para recibir información</p>
+        </form>
+      </div>
+```
+
 
 Se incluyó un formulario que permite a los usuarios agregar su correo electrónico a la base de datos del artista para futuros contactos o para recibir información. Los correos se almacenan en un arreglo. Para esto vinculamos el archivo main.js con el código para leer el evento submit cuando el usuario da click en Enviar o presiona "Enter".
 ```
@@ -96,7 +111,7 @@ En esta sección se agregaron los íconos de las plataformas de música donde es
 Cada elemento tiene un ícono con un link que deriva a la página correspondiente en una nueva pestaña para que los usuarios puedan adquirir sus productos. Se le agregó la opción de cambiar de color al pasar el mouse sobre el ícono.
 
 ```
-    <li class="list-inline-item">
+          <li class="list-inline-item">
             <a href="https://music.apple.com/us/artist/luis-gerardo-aquino/1488821749"
               class="fa-brands fa-apple"
               style="font-size: 130%; color: rgb(132, 240, 229)"
@@ -118,9 +133,9 @@ Para esta parte se utilizó la opción de grid para poder ordenar los diferentes
         display: grid;
         grid-template-columns: repeat(auto-fill, 1fr);
         grid-template-rows: repeat(auto-fill, 1fr);
-        gap: 50px;
+        gap: 3rem;
         padding-top: 0;
-    }
+      }
 
 ```
 
@@ -129,8 +144,11 @@ Al dar click en la imagen deriba al link de youtube de cada disco o single.
 
 HTML
 ```
-    <div class="cd">
-        <p>Yo miro tu Gloria</p>
+    <h1 id="discografia">Discografía</h1>
+      <div class="discografia">
+        <div class="cd">
+        <h4>Yo miro tu Gloria</h4>
+        <p>Lanzamiento: 2024</p>
         <a href="https://www.youtube.com/watch?v=Kl-ayjSD4QY" target="_blank">
           <img
             src="https://res.cloudinary.com/ddxlvh0go/image/upload/v1736226040/YMTG_oekfd1.webp"
@@ -143,31 +161,65 @@ HTML
 
 CSS
 ```
-    .cd{
+    .discografia{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 3rem;
+        padding-top: 0;
+      }
+      
+      .cd h4{
+        color: azure;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .cd p{
+        color: azure;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .cd img{
+        width: 13rem;
+        height: auto;
+        cursor: pointer;
+        padding-bottom: 0.6rem;
+      }
+      
+      .cd{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid azure;
-        border-radius: 10px;
-        padding-top: 20px;
-        margin: 20px;
-        }
+        border: 0.1rem solid azure;
+        border-radius: 0.6rem;
+        padding-top: 1.3rem;
+        margin: 1.3rem;
+      }
 ```
 
 ## Redes sociales
 
 De la misma manera que con las plataformas de música se usaron íconos de las redes sociales principales para conocer al artista, organizados en una lista ul.
 ```
-    <li class="rs">
-        <a
-            href="https://luisgerardoaquino.bandzoogle.com/inicio"
-            class="fa-solid fa-circle-info"
-            style="font-size: 250%; color: rgb(228, 245, 133)"
-            onmouseover="this.style.color='azure'"
-            onmouseout="this.style.color='rgb(252, 208, 63)'"
-            target="_blank"
-        ></a>
-    </li>
+    <h1 id="socialMedia">Síguenos</h1>
+      <div class="socialMedia">
+          <ul class="rrss">
+            <li class="rs">
+              <a
+                href="https://www.facebook.com/LuisGerardoAquinoSV/?locale=es_LA"
+                class="fa-brands fa-facebook"
+                style="font-size: 250%; color: rgb(4, 104, 185)"
+                onmouseover="this.style.color='azure'"
+                onmouseout="this.style.color='rgb(4, 104, 185)'"
+                target="_blank"
+              ></a>
+            </li>
 
 ```
 
@@ -176,7 +228,7 @@ De la misma manera que con las plataformas de música se usaron íconos de las r
 El Footer consiste en el logo de copyright, el nombre del artista, el teléfono y correo electrónico.
 ```
     <footer>
-      <p>&#169; LUIS GERARDO AQUINO  ||  contacto: +56 9 1111 1111  ||  luisgerardoaquino@gmail.com</p>
+      <p>&#169; Luis Gerardo Aquino   ||  contacto: +56 9 1111 1111  ||  luisgerardoaquino@gmail.com</p>
     </footer>
 ```
 
